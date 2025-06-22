@@ -4,11 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="top">
+            <div>
+                <span id="filter"><i class="fa-solid fa-filter"></i></span>
+                <h1>YOUR TODO LIST</h1>
+            </div>
+            <div class="input-section">
+                <form>
+                    <input type="text" placeholder="Enter a task" id="task-input">
+                    <span>
+                        <button id="add-task">ADD</button>
+                    </span>
+                </form>
+            </div>
 
+        </div>
+        <div class="middle">
+            <ul id="todo-list">
+                <li class="todo">
+                    <input type="checkbox" id="todo-1">
+                    <label class="custom-checkbox" for="todo-1">
+                        <i class="fa-solid fa-check"></i>
+                    </label>
+                    <label for="todo-1" class="todo-text">
+                        webdev project with html, css and js
+                    </label>
+                    <button class="edit-task"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-button"><i class="fa-solid fa-trash"></i></button>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
