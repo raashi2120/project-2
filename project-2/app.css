@@ -36,7 +36,7 @@ body {
 
 }
 
-#filter{
+#filter {
     position: absolute;
     left: 15px;
     top: 15px;
@@ -61,9 +61,9 @@ body {
     background-color: var(--primarycolor);
     padding: 30px 70px;
     border-radius: 20px;
-    box-shadow:0 8px 16px rgba(0, 0, 0, 0.25),  
-  0 0 20px rgba(255, 190, 140, 0.4);
-  position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(255, 190, 140, 0.4);
+    position: relative;
 }
 
 .input-section {
@@ -172,6 +172,17 @@ input[type="checkbox"]:checked~.todo-text {
 
 input[type="checkbox"] {
     display: none;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom h1 {
+    font-size: 15px;
+
 }
 
 @media(max-width:500px) {
