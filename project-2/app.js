@@ -13,6 +13,8 @@ todoForm.addEventListener('submit', (e) => {
 
 });
 
+
+
 function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText.length > 0) {
@@ -99,7 +101,7 @@ function createTodoItem(todo, todoIndex) {
         todoLI.replaceChild(editInput, todoTextLabel);
         editInput.focus();
 
-        
+
         function saveEdit() {
             const newText = editInput.value.trim();
             if (newText.length > 0) {
@@ -107,7 +109,7 @@ function createTodoItem(todo, todoIndex) {
                 saveTodo();
                 updateTodoList();
             } else {
-                updateTodoList(); 
+                updateTodoList();
             }
         }
 
@@ -148,5 +150,14 @@ filterSelect.addEventListener("change", (e) => {
     updateTodoList(selectedFilter);
 });
 
+
+
+const filter = document.querySelector('#f');
+
+filter.addEventListener('click', () => {
+    console.log("button clicked");
+    filterSelect.classList.toggle("visible");
+
+});
 
 

@@ -35,13 +35,17 @@ body {
 
 }
 
+#f:hover {
+    cursor: pointer;
+}
+
 #filter {
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 20px;
+    top: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 #filter-select {
@@ -52,6 +56,11 @@ body {
     border-radius: 10px;
     font: inherit;
     cursor: pointer;
+
+}
+
+.visible {
+    display: none;
 }
 
 .top h1 {
@@ -64,6 +73,8 @@ body {
 
 .wrapper {
     box-sizing: border-box;
+
+
     max-width: 65%;
     display: flex;
     flex-direction: column;
@@ -196,7 +207,7 @@ input[type="checkbox"] {
 .bottom {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: inherit;
 }
 
@@ -205,7 +216,7 @@ input[type="checkbox"] {
 
 }
 
-@media(max-width:500px) {
+@media(max-width:600px) {
     html {
         font-size: 12px;
     }
@@ -222,4 +233,32 @@ input[type="checkbox"] {
         font-size: 2rem;
     }
 
+    .edit-task,
+    .delete-button {
+
+        gap: 50px;
+
+    }
+
+    .wrapper {
+        max-width: 100%;
+
+    }
+
+    body {
+        padding: 0px;
+
+    }
+
+}
+
+.middle {
+
+    width: 100%;
+
+}
+
+.edit-task,
+.delete-button {
+    gap: 35px;
 }
